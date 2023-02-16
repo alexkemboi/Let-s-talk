@@ -22,7 +22,7 @@ function sendMessage() {
         const advice = data.slips[0].advice; // retrieve the advice from the API response data
         console.log(advice); // display the advice in the console
         var card = document.createElement("div");
-        card.classList.add("col-md-4");
+        card.classList.add("col-md-6");
         card.innerHTML = `<div class="card mb-3">
       <div class="card-header text-white bg-success">
        Let's Talk
