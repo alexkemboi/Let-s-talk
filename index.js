@@ -1,4 +1,7 @@
 function sendMessage() {
+  const date = new Date();
+  document.getElementById("conversationDate").innerHTML = date;
+  const time = date.getHours() + ":" + date.getMinutes() + "Hrs";
   const message = document.getElementById("senderMessageInput").value;
   var card = document.createElement("div");
   card.classList.add("col-md-4");
@@ -10,6 +13,9 @@ function sendMessage() {
         <div class="card-body">
           <p>${message}</p>
         </div>
+        <div class="card-footer">
+      <p>${time}</p>
+      </div>
       </div>`;
   const encodedQuestions = encodeURIComponent(message);
   // Make a GET request to the API with the question as a query parameter
@@ -29,6 +35,9 @@ function sendMessage() {
       </div>
       <div class="card-body">
         <p>${advice}</p>
+      </div>
+      <div class="card-footer">
+      <p>${time}</p>
       </div>
     </div>`;
         document.getElementById("rowChatBot").appendChild(card);
