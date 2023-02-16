@@ -1,3 +1,23 @@
-.navlink{
-    color:white;
-}
+body {
+    margin: 0;
+  }
+  .full {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    overflow: hidden;
+  }
+  .inside {
+    position: relative;
+    /* some bit of margins */
+    top: 50px;
+    left: 50px;
+    /* calculate the width, if not, weird effect. */
+    width: calc(100% - 50px * 2);
+    height: calc(100% - 50px * 2);
+    /* 50px * 2 because 50px is just enough for the .inside div's width and height not to fall out of screen. */
+    /* make it like your image */
+    background-color: blue;
+    overflow: auto;
+  }

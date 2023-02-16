@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Chatbot</title>
+    <title>Let's Talk</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -60,32 +60,51 @@
         </div>
       </nav>
 
-      <div class="card overflow-auto">
-        <div class="card-header bg-danger text-white"><h4>Conversation</h4></div>
+      <div class="card" style="overflow: scroll; height: 80vh">
+        <div class="card-header bg-danger text-white">
+          <h7>Conversation</h7>
+        </div>
         <div class="card-body">
           <div class="card overflow-auto ml-auto" id="rowChatBot"></div>
         </div>
-        <div class="card-footer bg-danger text-white">
-          <div class="row">
-            <div class="col-3">
-              <p class="text-white">Send your message here</p>
-            </div>
-            <div class="col-8">
-              <input
-                type="text"
-                placeholder="Enter your text here"
-                class="form-control bg-danger border-1 h-2em text-white"
-                id="senderMessageInput"
-              />
-            </div>
+      </div>
 
-            <div class="col-1">
-              <i class="fas fa-paper-plane" onclick="sendMessage()"></i>
-            </div>
+      <div class="card-footer bg-danger text-white fixed">
+        <div class="row">
+          <div class="col-3">
+            <p class="text-white">Send your message here</p>
+          </div>
+          <div class="col-8">
+            <input
+              type="text"
+              placeholder="Enter your text here"
+              class="form-control bg-danger border-1 h-2em text-white"
+              id="senderMessageInput"
+            />
+          </div>
+
+          <div class="col-1">
+            <i class="fas fa-paper-plane" onclick="sendMessage()"></i>
           </div>
         </div>
       </div>
     </div>
+
     <script src="index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
