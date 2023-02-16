@@ -34,6 +34,7 @@
     <div class="container">
       <!--Navigation bar-->
       <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <i class="fas fa-comment fa-4x text-white" ></i>
         <a class="navbar-brand text-white" href="#">Let's Talk</a>
         <button
           class="navbar-toggler"
@@ -65,12 +66,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#"
-                ><i class="fas fa-search"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#"
-                ><i class="fas fa-user"></i
+                ><i class="fas fa-user fa-3x"></i
               ></a>
             </li>
           </ul>
@@ -78,27 +74,27 @@
       </nav>
     </div>
 
-    <div class="container" style="overflow: scroll; height: 80vh">
+    <div class="container" style="overflow: scroll; height: 58.5vh">
         <!-- Hero section -->
-        <section class="jumbotron text-center bg-light">
+        <section class="jumbotron text-center bg-light ">
           <div class="container bg-light">
-            <h1 class="jumbotron-heading text-danger">Let's Talk...</h1>
+            <h1 class="jumbotron-heading text-danger"><i class="fas fa-comment fa-3x"></i>Let's Talk...</h1>
             <p class="lead text-danger">
               Take control of your mental health with our comprehensive app
             </p>
-            <a href="#" class="btn btn-danger my-2">Get Started</a>
+            <a href="#" class="btn btn-danger "><i class="fas fa-ok fa-3x text-white"></i>Get Started</a>
           </div>
         </section>
 
-        <section class="features-icons bg-light text-center">
+        <section class="features-icons bg-light text-center ">
           <div class="container">
             <div class="row">
               <div class="col-lg-4">
                 <div class="features-icons-item mx-auto ">
                   <div class="features-icons-icon d-flex">
-                    <i class="bi bi-peace-fill m-auto text-danger"></i>
+                    <i class="bi bi-peace-fill fa-3x m-auto text-danger"></i>
                   </div>
-                  <h3 class="text-danger">Mindfulness Exercises</h3>
+                  <h4 class="text-danger">Mindfulness Exercises</h4>
                   <p class="lead mb-0 text-danger">
                     Reduce stress and improve focus with daily mindfulness
                     practices
@@ -108,9 +104,9 @@
               <div class="col-lg-4">
                 <div class="features-icons-item mx-auto  mb-lg-0 ">
                   <div class="features-icons-icon d-flex">
-                    <i class="bi bi-graph-up m-auto text-danger"></i>
+                    <i class="bi bi-graph-up fa-3x  m-auto text-danger"></i>
                   </div>
-                  <h3 class="text-danger">Mood Tracker</h3>
+                  <h4 class="text-danger">Mood Tracker</h4>
                   <p class="lead mb-0 text-danger">
                     Log your emotions and track progress over time
                   </p>
@@ -119,9 +115,9 @@
               <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-0 ">
                   <div class="features-icons-icon d-flex">
-                    <i class="bi bi-journal-text m-auto text-danger"></i>
+                    <i class="bi bi-journal-text fa-3x  m-auto text-danger"></i>
                   </div>
-                  <h3 class="text-danger">(CBT) exercises</h3>
+                  <h4 class="text-danger">(CBT) exercises</h4>
                   <p class="lead mb-0 text-danger">
                     Learn effective techniques to manage negative thoughts and
                     behaviors
@@ -130,17 +126,37 @@
               </div>
             </div>
           </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <i class="fas fa-book fa-3x text-danger"></i>
+                <h4 class="text-danger">Resources</h4>
+                <p class="text-danger lead">We provide a wealth of information and resources related to mental health, including articles, videos, podcasts, and more. You can access these resources at any time to learn more about mental health and ways to improve your wellbeing</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <i class="fas fa-tools fa-3x text-danger"></i>
+                <h4 class="text-danger">Tools</h4>
+                <p class="text-danger lead">Our app includes a variety of tools to help you manage your mental health, including guided meditations, mood trackers, and journaling prompts. These tools can help you develop healthy habits and stay on track with your mental health goals.</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <i class="fas fa-users fa-3x text-danger"></i>
+                <h4 class="text-danger">Community Support</h4>
+                <p class="text-danger lead">Our app provides a supportive community of individuals who are also focused on improving their mental health. You can connect with others, share your experiences, and receive support and encouragement</p>
+              </div>
+            </div>
+          </div>
+          
         </section>
       
 
-      <div class="card mt-1">
+      <div class="card mt-3">
         <div class="card-header bg-danger text-white">
           <div class="row">
             <h7>Conversation</h7>
             <p id="conversationDate" class="ml-auto"></p>
           </div>
         </div>
-        <div class="card-body bg-light" style="overflow: scroll; height: 50vh">
+        <div class="card-body bg-light" style="overflow: scroll; height: 40vh">
           <div class="card overflow-auto ml-auto" id="rowChatBot"></div>
         </div>
 
@@ -159,7 +175,7 @@
             </div>
 
             <div class="col-1">
-              <i class="fas fa-paper-plane" onclick="sendMessage()"></i>
+              <i class="fas fa-paper-plane fa-2x" onclick="sendMessage()"></i>
             </div>
           </div>
         </div>
@@ -236,10 +252,10 @@
                   <div class="d-grid">
                     <button
                       type="submit"
-                      class="btn btn-danger btn-lg ml-auto"
+                      class="btn btn-danger btn-lg ml-auto "
                       ng-disabled="contactForm.$invalid"
                     >
-                      Submit
+                      Send<i class="fas fa-paper-plane fa-2x"></i>
                     </button>
                   </div>
                 </form>
@@ -256,24 +272,25 @@
           <div class="row">
             <div class="col-md-4 text-center">
               <h6>Contact Us</h6>
-              <h7>+254726837210</h7>
+              <h7>+254-726-837-210</h7></br>
               <h7>Email: info@mentalhealthapp.com</h7>
-              <h7>Phone: 555-123-4567</h7>
-              <h7>Nairobi</h7>
+              <h7>Phone: 555-123-4567</h7></br>
+              <h7>Nairobi</h7></br>
+              <h7>Kenya</h7>
             </div>
-            <div class="col-md-4 text-md-center">
+            <div class="col-md-4 text-center">
               <h6>Follow Us</h6>
               <a href="#" class="text-light me-3"
-                ><i class="fab fa-facebook"></i
+                ><i class="fab fa-facebook fa-3x "></i
               ></a>
               <a href="#" class="text-light me-3"
-                ><i class="fab fa-twitter"></i
+                ><i class="fab fa-twitter fa-3x "></i
               ></a>
               <a href="#" class="text-light me-3"
-                ><i class="fab fa-instagram"></i
+                ><i class="fab fa-instagram fa-3x "></i
               ></a>
-              <a href="#" class="text-light me-3"
-                ><i class="fab fa-linkedin"></i
+              <a href="#" class="text-light  me-3"
+                ><i class="fab fa-linkedin fa-3x "></i
               ></a>
             </div>
             <div class="col-md-4 text-center">
