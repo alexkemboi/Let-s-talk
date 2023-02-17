@@ -31,6 +31,35 @@
     />
   </head>
   <body>
+
+    <div class="row justify-content-center mt-100" id="logInSection">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header bg-danger text-white">
+            
+            <i class="fas fa-comment fa-3x"></i>
+            <h4 class="mb-0 text-center">Login</h4>
+          </div>
+          <div class="card-body">
+            
+              <div class="form-group">
+                <label for="email"><i class="fas fa-envelope text-danger"></i> Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="password"><i class="fas fa-lock text-danger"></i> Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <button  class="btn btn-danger btn-block" onclick="showApp()"><i class="fas fa-sign-in-alt fa-2x"></i> Login</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="appSection" style="display: none;">
     <div class="container">
       <!--Navigation bar-->
       <nav class="navbar navbar-expand-lg navbar-light bg-danger">
@@ -50,22 +79,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
+              <a class="nav-link text-white" href="#" role="button" onclick="showHome()">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">About</a>
+              <a class="nav-link text-white" href="#" role="button" onclick="showAbout()">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Chat</a>
+              <a class="nav-link text-white" href="#" role="button" onclick="showChat()">Chat</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Resources</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact</a>
+              <a class="nav-link text-white" href="#" role="button" onclick="showContact()">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#"
+              <a class="nav-link text-white" href="#" role="button" onclick="logIn()"
                 ><i class="fas fa-user fa-3x"></i
               ></a>
             </li>
@@ -74,10 +103,10 @@
       </nav>
     </div>
 
-    <div class="container" style="overflow: scroll; height: 58.5vh">
+    <div class="container" style="overflow: scroll; height: 75vh">
         <!-- Hero section -->
-        <section class="jumbotron text-center bg-light ">
-          <div class="container bg-light">
+        <section class="jumbotron text-center bg-light " style="display:block;height: 67vh" id="homeSection">
+          <div class="container bg-light"style="display:block;height: 50vh">
             <h1 class="jumbotron-heading text-danger"><i class="fas fa-comment fa-3x"></i>Let's Talk...</h1>
             <p class="lead text-danger">
               Take control of your mental health with our comprehensive app
@@ -86,7 +115,7 @@
           </div>
         </section>
 
-        <section class="features-icons bg-light text-center ">
+        <section class="features-icons bg-light text-center " style="display:none;" id="aboutSection">
           <div class="container">
             <div class="row">
               <div class="col-lg-4">
@@ -149,14 +178,14 @@
         </section>
       
 
-      <div class="card mt-3">
+      <div class="card mt-3" style="display:none;" id="chatSection">
         <div class="card-header bg-danger text-white">
           <div class="row">
             <h7>Conversation</h7>
             <p id="conversationDate" class="ml-auto"></p>
           </div>
         </div>
-        <div class="card-body bg-light" style="overflow: scroll; height: 40vh">
+        <div class="card-body bg-light" style="overflow: scroll; height: 60vh">
           <div class="card overflow-auto ml-auto" id="rowChatBot"></div>
         </div>
 
@@ -181,7 +210,7 @@
         </div>
       </div>
 
-      <section class="contact-section">
+      <section class="contact-section" style="display:none;" id="contactSection">
         <div class="row">
           <div class="col-lg-12 mx-auto">
             <div class="card">
@@ -295,11 +324,11 @@
             </div>
             <div class="col-md-4 text-center">
               <h6>Quick links</h6>
-              <h7>Home</h7></br>
-              <h7>About us</h7></br>
-              <h7>Chat</h7></br>
+              <h7 role="button" onclick="showHome()">Home</h7></br>
+              <h7 role="button" onclick="showAbout()">About us</h7></br>
+              <h7 role="button" onclick="showChat()">Chat</h7></br>
               <h7>Resources</h7></br>
-              <h7>Contact us</h6>
+              <h7 role="button" onclick="showContact()">Contact us</h6>
             </div>
           </div>
           <div class="row mt-2">
@@ -310,6 +339,13 @@
         </div>
       </footer>
     </div>
+
+
+
+
+
+  </div>
+    
 
     <script src="index.js"></script>
     <script
@@ -328,5 +364,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
   </body>
 </html>
