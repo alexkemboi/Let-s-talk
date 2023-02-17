@@ -1,3 +1,8 @@
+function toggleSidebar() {
+  var row = document.getElementById("myRow");
+  row.classList.toggle("sidebar-open");
+}
+
 function showAbout() {
   var homeSection = document.getElementById("homeSection");
   homeSection.style.display = "none";
@@ -67,7 +72,7 @@ function logIn() {
   letsTalk.style.display = "none";
 
   var logInSection = document.getElementById("logInSection");
-  logInSection.style.display = "block"
+  logInSection.style.display = "block";
 }
 
 function sendMessage() {
@@ -78,7 +83,7 @@ function sendMessage() {
   var card = document.createElement("div");
   card.classList.add("col-md-4");
   card.classList.add("ml-auto");
-  card.innerHTML = `<div class="card mb-3 ">
+  card.innerHTML = `<div class="card mb-3 " style="height:150px;">
         <div class="card-header text-white bg-dark">
          Sender
         </div>
@@ -101,7 +106,7 @@ function sendMessage() {
         console.log(advice); // display the advice in the console
         var card = document.createElement("div");
         card.classList.add("col-md-6");
-        card.innerHTML = `<div class="card mb-3">
+        card.innerHTML = `<div class="card mb-3"style="height:150px;">
       <div class="card-header text-white bg-success">
        Let's Talk
       </div>

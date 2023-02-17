@@ -31,7 +31,7 @@
     />
   </head>
   <body>
-
+<!-- 
     <div class="row justify-content-center mt-100" id="logInSection">
       <div class="col-md-6">
         <div class="card">
@@ -56,14 +56,14 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
-  <div id="appSection" style="display: none;">
-    <div class="container">
+  <div id="appSection">
+    <div >
       <!--Navigation bar-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-        <i class="fas fa-comment fa-4x text-white" ></i>
+      <nav class="navbar navbar-expand-lg navbar-light bgColor">
+        
         <a class="navbar-brand text-white" href="#">Let's Talk</a>
         <button
           class="navbar-toggler"
@@ -76,8 +76,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse sidebar" id="navbarNav">
+          <ul class="navbar-nav ml-auto content">
             <li class="nav-item">
               <a class="nav-link text-white" href="#" role="button" onclick="showHome()">Home</a>
             </li>
@@ -108,15 +108,15 @@
       </nav>
     </div>
 
-    <div class="container" style="overflow: scroll; height: 60vh">
+    <div  style="overflow: scroll; height: 70vh" >
         <!-- Hero section -->
-        <section class="jumbotron text-center bg-light " style="display:block;height: 67vh" id="homeSection">
-          <div class="container bg-light"style="display:block;height: 50vh">
-            <h1 class="jumbotron-heading "><i class="fas fa-comment fa-3x textColor"></i class="textColor">Let's Talk...</h1>
+        <section class="jumbotron text-center bg-light bgImage" style="display:block;height: 67vh" id="homeSection">
+          <div class="container "style="display:block;height: 50vh">
+            <h1 class="jumbotron-heading "><i class="fas fa-comment fa-3x textColor"></i style="color:#154360">Let's Talk...</h1>
             <p class="textBlue">
-              Take control of your mental health with our comhrehensive ahp
+              Take control of your mental health with our comhrehensive app
             </p>
-            <a href="#" class="btn btn-danger border-0 text-white"  "><i class="fas fa-ok fa-3x text-white"></i>Get Started</a>
+            <a href="http://localhost/letstalk/index.php" class="btn btn-danger border-0 text-white"><i class="fas fa-ok fa-3x text-white"></i>Get Started</a>
           </div>
         </section>
 
@@ -190,7 +190,7 @@
             <p id="conversationDate" class="ml-auto"></p>
           </div>
         </div>
-        <div class="card-body bg-light" style="overflow: scroll; height: 60vh">
+        <div class="card-body bg-light" style="overflow: scroll; height: 55vh">
           <div class="card overflow-auto ml-auto" id="rowChatBot"></div>
         </div>
 
@@ -301,7 +301,7 @@
       </section>
     </div>
 
-    <div class="container">
+    <div>
       <footer class="bg-danger text-light py-4">
         <div class="container">
           <div class="row">
@@ -315,16 +315,16 @@
             </div>
             <div class="col-md-4 text-center">
               <h6>Follow Us</h6>
-              <a href="#" class="text-light me-3"
+              <a href="https://www.facebook.com/mentalhealthsupport" class="text-light me-3"
                 ><i class="fab fa-facebook fa-3x "></i
               ></a>
-              <a href="#" class="text-light me-3"
+              <a href="https://twitter.com/MentalHealthAm" class="text-light me-3"
                 ><i class="fab fa-twitter fa-3x "></i
               ></a>
-              <a href="#" class="text-light me-3"
+              <a href="https://www.instagram.com/nimhgov/" class="text-light me-3"
                 ><i class="fab fa-instagram fa-3x "></i
               ></a>
-              <a href="#" class="text-light  me-3"
+              <a href="https://www.linkedin.com/groups/1220207/" class="text-light  me-3"
                 ><i class="fab fa-linkedin fa-3x "></i
               ></a>
             </div>

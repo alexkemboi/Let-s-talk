@@ -66,38 +66,52 @@ function loginForm(){
     />
     <script src="https://kit.fontawesome.com/10e69a808e.js" crossorigin="anonymous"></script>
     </head>
-    <body class="container" >
-    <header class="container" style="background-color:#154360">  
-        <nav class="navbar navbar-expand-lg " style="background-color:#154360">
-          <div class="container-fluid">
-            <i class="fas fa-comment fa-3x text-white"></i>
-            <a class="navbar-brand text-white" href="#" >
-             Chat
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="http://127.0.0.1:5500/#">Blog</a>
+    <body>
+    <header  style="background-color:#154360">  
+    <nav class="navbar navbar-expand-lg navbar-light bgColor">
+        <i class="fas fa-comment fa-4x text-white" ></i>
+        <a class="navbar-brand text-white" href="#">Let's Talk</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white"  role="button" >Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white"  role="button" >About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white"  role="button" >Site</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white">Chat</a>
 
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#">Resources</a>
-                  </li>
-               
-              </ul>
-              <form class="d-flex" role="search" >
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Search</button>
-              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" >Resources</a>
 
-             
-            </div>
-           
-          </div>
-        </nav>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white"  role="button" >Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white"  role="button" 
+                ><i class="fas fa-user fa-3x"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <?php
     if(!isset($_SESSION['name'])){
