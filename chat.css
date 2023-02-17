@@ -160,3 +160,19 @@
   .msgln b.user-name-left {
     background: orangered;
   }
+  .bg-danger {
+    background-color: #154360 !important;
+  }
+
+  .text-danger {
+    background-color: #154360 !important;
+  }
+  .textColor{
+    color: #154360 !important;
+  }
+  .border-danger{
+    color: #154360 !important;
+  }
+  .bgColor{
+    color: #154360 !important;
+  }

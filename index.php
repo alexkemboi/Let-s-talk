@@ -38,14 +38,41 @@ function loginForm(){
         <meta name="description" content="Tuts+ Chat Application" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="chat.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.bootstrapcdn.com/bootstrap-icons/1.6.1/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-4oVjYgZdJ+u3vX9qIxaGwkG/3V7P2wO2n0nN+ZXTaOJe7JhIz9U6SLHpUoLkU0Sz"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
     <script src="https://kit.fontawesome.com/10e69a808e.js" crossorigin="anonymous"></script>
     </head>
-    <body>
-    <header>  
-        <nav class="navbar navbar-expand-lg color ">
+    <body class="container" >
+    <header class="container" style="background-color:#154360">  
+        <nav class="navbar navbar-expand-lg " style="background-color:#154360">
           <div class="container-fluid">
-            <a class="navbar-brand " href="#" >
-              LET'S TALK
+            <i class="fas fa-comment fa-3x text-white"></i>
+            <a class="navbar-brand text-white" href="#" >
+             Chat
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -53,16 +80,17 @@ function loginForm(){
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">BLOG</a>
+                <a class="nav-link active text-white" aria-current="page" href="http://127.0.0.1:5500/#">Blog</a>
+
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">CHAT</a>
+                    <a class="nav-link active text-white" aria-current="page" href="#">Resources</a>
                   </li>
                
               </ul>
               <form class="d-flex" role="search" >
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-light" type="submit">Search</button>
               </form>
 
              
@@ -77,10 +105,10 @@ function loginForm(){
     }
     else {
     ?>
-        <div id="wrapper">
+        <div id="wrapper" style="background-color:#154360">
             <div id="menu">
-                <p class="welcome">Welcome, <b><?php echo $_SESSION['name']; ?></b></p>
-                <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+                <p class="welcome text-white">Welcome, <b><?php echo $_SESSION['name']; ?></b></p>
+                <p  ><a id="exit" href="#">Exit Chat</a></p>
             </div>
             <div id="chatbox">
             <?php

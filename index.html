@@ -35,22 +35,22 @@
     <div class="row justify-content-center mt-100" id="logInSection">
       <div class="col-md-6">
         <div class="card">
-          <div class="card-header bg-danger text-white">
+          <div class="card-header bg-danger">
             
-            <i class="fas fa-comment fa-3x"></i>
-            <h4 class="mb-0 text-center">Login</h4>
+            <i class="fas fa-comment fa-3x text-white"></i>
+            <h4 class="mb-0 text-center text-white">Login</h4>
           </div>
           <div class="card-body">
             
               <div class="form-group">
-                <label for="email"><i class="fas fa-envelope text-danger"></i> Email</label>
+                <label for="email"><i class="fas fa-envelope "style="color:#154360"></i> Email</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter email">
               </div>
               <div class="form-group">
-                <label for="password"><i class="fas fa-lock text-danger"></i> Password</label>
+                <label for="password"><i class="fas fa-lock"style="color:#154360"></i> Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Password">
               </div>
-              <button  class="btn btn-danger btn-block" onclick="showApp()"><i class="fas fa-sign-in-alt fa-2x"></i> Login</button>
+              <button  class="btn btn-danger btn-block border-danger" onclick="showApp()"><i class="fas fa-sign-in-alt fa-2x"></i> Login</button>
             
           </div>
         </div>
@@ -85,10 +85,15 @@
               <a class="nav-link text-white" href="#" role="button" onclick="showAbout()">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#" role="button" onclick="showChat()">Chat</a>
+              <a class="nav-link text-white" href="#" role="button" onclick="showChat()">Bot</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="http://localhost/letstalk/index.php">Chat</a>
+
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Resources</a>
+
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#" role="button" onclick="showContact()">Contact</a>
@@ -103,28 +108,28 @@
       </nav>
     </div>
 
-    <div class="container" style="overflow: scroll; height: 75vh">
+    <div class="container" style="overflow: scroll; height: 60vh">
         <!-- Hero section -->
         <section class="jumbotron text-center bg-light " style="display:block;height: 67vh" id="homeSection">
           <div class="container bg-light"style="display:block;height: 50vh">
-            <h1 class="jumbotron-heading text-danger"><i class="fas fa-comment fa-3x"></i>Let's Talk...</h1>
-            <p class="lead text-danger">
-              Take control of your mental health with our comprehensive app
+            <h1 class="jumbotron-heading "><i class="fas fa-comment fa-3x textColor"></i class="textColor">Let's Talk...</h1>
+            <p class="textBlue">
+              Take control of your mental health with our comhrehensive ahp
             </p>
-            <a href="#" class="btn btn-danger "><i class="fas fa-ok fa-3x text-white"></i>Get Started</a>
+            <a href="#" class="btn btn-danger border-0 text-white"  "><i class="fas fa-ok fa-3x text-white"></i>Get Started</a>
           </div>
         </section>
 
-        <section class="features-icons bg-light text-center " style="display:none;" id="aboutSection">
+        <section class="features-icons bg-light text-center " style="display:none;color:#154360" id="aboutSection">
           <div class="container">
             <div class="row">
               <div class="col-lg-4">
                 <div class="features-icons-item mx-auto ">
                   <div class="features-icons-icon d-flex">
-                    <i class="bi bi-peace-fill fa-3x m-auto text-danger"></i>
+                    <i class="bi bi-peace-fill fa-3x m-auto textColor"></i>
                   </div>
-                  <h4 class="text-danger">Mindfulness Exercises</h4>
-                  <p class="lead mb-0 text-danger">
+                  <h4 class="textColor">Mindfulness Exercises</h4>
+                  <p class="lead mb-0 textColor">
                     Reduce stress and improve focus with daily mindfulness
                     practices
                   </p>
@@ -133,10 +138,10 @@
               <div class="col-lg-4">
                 <div class="features-icons-item mx-auto  mb-lg-0 ">
                   <div class="features-icons-icon d-flex">
-                    <i class="bi bi-graph-up fa-3x  m-auto text-danger"></i>
+                    <i class="bi bi-graph-up fa-3x  m-auto textColor"></i>
                   </div>
-                  <h4 class="text-danger">Mood Tracker</h4>
-                  <p class="lead mb-0 text-danger">
+                  <h4 class="textColor">Mood Tracker</h4>
+                  <p class="lead mb-0 textColor">
                     Log your emotions and track progress over time
                   </p>
                 </div>
@@ -144,10 +149,10 @@
               <div class="col-lg-4">
                 <div class="features-icons-item mx-auto mb-0 ">
                   <div class="features-icons-icon d-flex">
-                    <i class="bi bi-journal-text fa-3x  m-auto text-danger"></i>
+                    <i class="bi bi-journal-text fa-3x  m-auto textColor"></i>
                   </div>
-                  <h4 class="text-danger">(CBT) exercises</h4>
-                  <p class="lead mb-0 text-danger">
+                  <h4 class="textColor">(CBT) exercises</h4>
+                  <p class="lead mb-0 textColor">
                     Learn effective techniques to manage negative thoughts and
                     behaviors
                   </p>
@@ -158,19 +163,19 @@
           <div class="container">
             <div class="row">
               <div class="col-md-4 text-center">
-                <i class="fas fa-book fa-3x text-danger"></i>
-                <h4 class="text-danger">Resources</h4>
-                <p class="text-danger lead">We provide a wealth of information and resources related to mental health, including articles, videos, podcasts, and more. You can access these resources at any time to learn more about mental health and ways to improve your wellbeing</p>
+                <i class="fas fa-book fa-3x textColor"></i>
+                <h4 class="textColor">Resources</h4>
+                <p class="textColor lead">We provide a wealth of information and resources related to mental health, including articles, videos, podcasts, and more. You can access these resources at any time to learn more about mental health and ways to improve your wellbeing</p>
               </div>
               <div class="col-md-4 text-center">
-                <i class="fas fa-tools fa-3x text-danger"></i>
-                <h4 class="text-danger">Tools</h4>
-                <p class="text-danger lead">Our app includes a variety of tools to help you manage your mental health, including guided meditations, mood trackers, and journaling prompts. These tools can help you develop healthy habits and stay on track with your mental health goals.</p>
+                <i class="fas fa-tools fa-3x textColor"></i>
+                <h4 class="textColor">Tools</h4>
+                <p class="textColor lead">Our app includes a variety of tools to help you manage your mental health, including guided meditations, mood trackers, and journaling prompts. These tools can help you develop healthy habits and stay on track with your mental health goals.</p>
               </div>
               <div class="col-md-4 text-center">
-                <i class="fas fa-users fa-3x text-danger"></i>
-                <h4 class="text-danger">Community Support</h4>
-                <p class="text-danger lead">Our app provides a supportive community of individuals who are also focused on improving their mental health. You can connect with others, share your experiences, and receive support and encouragement</p>
+                <i class="fas fa-users fa-3x textColor"></i>
+                <h4 class="textColor">Community Support</h4>
+                <p class="textColor lead">Our app provides a supportive community of individuals who are also focused on improving their mental health. You can connect with others, share your experiences, and receive support and encouragement</p>
               </div>
             </div>
           </div>
@@ -220,10 +225,10 @@
               <div class="card-body bg-light">
                 <form name="contactForm" novalidate>
                   <div class="form-floating mb-3">
-                    <label for="name" class="text-danger">Name</label>
+                    <label for="name" class="textColor">Name</label>
                     <input
                       type="text"
-                      class="form-control border-danger"
+                      class="form-control borderColor"
                       id="name"
                       required
                       ng-model="formData.name"
@@ -239,10 +244,10 @@
                     </div>
                   </div>
                   <div class="form-floating mb-3">
-                    <label for="email" class="text-danger">Email address</label>
+                    <label for="email" class="textColor">Email address</label>
                     <input
                       type="email"
-                      class="form-control border-danger"
+                      class="form-control borderColor"
                       id="email"
                       required
                       ng-model="formData.email"
@@ -261,9 +266,9 @@
                     </div>
                   </div>
                   <div class="form-floating mb-3">
-                    <label for="message" class="text-danger">Message</label>
+                    <label for="message" class="textColor">Message</label>
                     <textarea
-                      class="form-control border-danger"
+                      class="form-control borderColor"
                       id="message"
                       required
                       ng-model="formData.message"
@@ -281,10 +286,11 @@
                   <div class="d-grid">
                     <button
                       type="submit"
-                      class="btn btn-danger btn-lg ml-auto "
+                      class="btn  btn-lg ml-auto text-white"
                       ng-disabled="contactForm.$invalid"
+                      style="border:#154360;background:#154360"
                     >
-                      Send<i class="fas fa-paper-plane fa-2x"></i>
+                      Send<i class="fas fa-paper-plane fa-2x text-white"></i>
                     </button>
                   </div>
                 </form>

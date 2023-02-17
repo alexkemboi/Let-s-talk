@@ -22,7 +22,24 @@ body {
     overflow: auto;
   }
 
-  #logInSection {
+ 
+  .bg-danger {
+    background-color: #154360 !important;
   }
+
   
-  
+  .text-danger{
+    background-color: white !important;
+  }
+  .btn-danger{    
+    background-color: #154360 !important;
+  }
+  .textColor{
+    color: #154360 !important;
+  }
+  .border-danger{
+    border-color: #154360 !important;
+  }
+  .bgColor{
+    color: #154360 !important;
+  }
